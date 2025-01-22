@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <!-- <link rel="stylesheet" type="text" href="style.css"> -->
+     <style>
+        body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: midnightblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    color: midnightblue;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2em;
+    color: midnightblue;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button a{
+    text-decoration: none;
+}
+button:hover {
+    background-color: #219150;
+    color: white;
+    font-size: 1.3em;
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>{{ prediction }}</p>
+        <button><a href="/">Back to Upload</a></button>
+    </div>
+
+</body>
+</html>
